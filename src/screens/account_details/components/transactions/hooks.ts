@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { convertMsgsToModels } from '@msg';

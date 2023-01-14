@@ -12431,19 +12431,7 @@ export const BlocksDocument = gql`
     txs: num_txs
     hash
     timestamp
-    validator {
-      validatorInfo: validator_info {
-        operatorAddress: operator_address
-        self_delegate_address
-      }
-      validatorDescriptions: validator_descriptions(
-        limit: 1
-        order_by: {height: desc}
-      ) {
-        moniker
-        identity
-      }
-    }
+
   }
 }
     `;

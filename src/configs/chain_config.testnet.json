@@ -1,20 +1,20 @@
 {
-  "title": "Cosmos Block Explorer",
-  "network": "theta-testnet-001",
+  "title": "WM Block Explorer",
+  "network": "aya_preview_001",
   "prefix": {
-    "consensus": "cosmosvalcons",
-    "validator": "cosmosvaloper",
-    "account": "cosmos"
+    "consensus": "ayavalcons",
+    "validator": "ayavaloper",
+    "account": "aya"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "uatom",
-  "votingPowerTokenUnit": "uatom",
+  "primaryTokenUnit": "wmt",
+  "votingPowerTokenUnit": "wmt",
   "tokenUnits": {
-    "uatom": {
-      "display": "atom",
+    "wmt": {
+      "display": "wmt",
       "exponent": 6
     }
   },

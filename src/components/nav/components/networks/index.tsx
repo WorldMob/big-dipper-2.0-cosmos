@@ -6,7 +6,6 @@ import WMLogo from '@assets/WM_Logo.svg?url';
 import { useStyles } from './styles';
 import { SingleNetwork } from './components';
 
-
 const Networks: React.FC<{
   className?: string;
 }> = ({ className }) => {

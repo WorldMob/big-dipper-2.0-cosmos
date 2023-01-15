@@ -1,5 +1,5 @@
-import BigDipperLogoRed from '@assets/big-dipper-red.svg';
-import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
+import WM_Logo_txt_purple_v2 from '@assets/WM_Logo_txt_purple_v2.svg';
+import WM_Logo_txt_white_v2 from '@assets/WM_Logo_txt_white_v2.svg';
 import { ChainLogo } from '@components';
 import { LinearProgress } from '@material-ui/core';
 import { readTheme } from '@recoil/settings';
@@ -17,9 +17,9 @@ const InitialLoad = () => {
         <ChainLogo className={classes.logo} alt="logo" />
         <LinearProgress className={classes.divider} />
         {theme === 'light' ? (
-          <BigDipperLogoRed />
+          <WM_Logo_txt_purple_v2 />
         ) : (
-          <BigDipperLogoWhite />
+          <WM_Logo_txt_white_v2 />
         )}
       </div>
     </div>

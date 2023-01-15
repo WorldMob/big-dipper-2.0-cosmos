@@ -1,6 +1,9 @@
 const nextTranslate = require('next-translate');
 
 module.exports = nextTranslate({
+  experimental: {
+    newNextLinkBehavior: false,
+  },
   poweredByHeader: false,
   webpack: (config) => {
     config.module.rules.push({

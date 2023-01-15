@@ -7,8 +7,8 @@ import {
 } from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
 import { readTheme } from '@recoil/settings/selectors';
-import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
-import BigDipperLogoRed from '@assets/big-dipper-red.svg';
+import WMLogotxtWhite from '@assets/WM_Logo_txt_white_v1.svg';
+import WMLogotxtPurple from '@assets/WM_Logo_txt_purple_v1.svg';
 import { useStyles } from './styles';
 import { useDesktop } from './hooks';
 import {
@@ -52,28 +52,29 @@ const Desktop: React.FC<{
         <Drawer
           variant="permanent"
           className={classnames(classes.drawer, {
-            open: isMenu,
-            closed: !isMenu,
+            open: true,
+            closed: false,
             [classes.drawerOpen]: isMenu,
             [classes.drawerClose]: !isMenu,
           })}
           classes={{
             paper: classnames({
-              open: isMenu,
-              closed: !isMenu,
+              open: true,
+              closed: false,
               [classes.drawerOpen]: isMenu,
               [classes.drawerClose]: !isMenu,
             }),
           }}
         >
+
           {theme === 'light' ? (
-            <BigDipperLogoRed
+            <WMLogotxtPurple
               className={classes.logo}
               onClick={toggleMenu}
               role="button"
             />
           ) : (
-            <BigDipperLogoWhite
+            <WMLogotxtWhite
               className={classes.logo}
               onClick={toggleMenu}
               role="button"

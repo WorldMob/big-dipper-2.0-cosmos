@@ -3,8 +3,9 @@ import classnames from 'classnames';
 import Trans from 'next-translate/Trans';
 import { useRecoilValue } from 'recoil';
 import useTranslation from 'next-translate/useTranslation';
-import FooterLogoLight from '@assets/big-dipper-red.svg';
-import FooterLogoDark from '@assets/big-dipper-white.svg';
+import FooterLogoLight from '@assets/WM_Logo_txt_purple_v1.svg';
+import FooterLogoDark from '@assets/WM_Logo_txt_white_v1.svg';
+import WMLogo from '@assets/WM_Logo.svg';
 import {
   Button,
   Divider,
@@ -48,7 +49,7 @@ const Footer: React.FC<{className?: string}> = ({ className }) => {
         {/* links */}
         {/* ============================= */}
         <div className="footer__links">
-          {footerLinks.map((group) => {
+          {/* {footerLinks.map((group) => {
             return (
               <div key={group.key} className={`${group.key} links__group`}>
                 <h3>{t(`common:${group.key}`)}</h3>
@@ -68,11 +69,11 @@ const Footer: React.FC<{className?: string}> = ({ className }) => {
                   }
               </div>
             );
-          })}
+          })} */}
           {/* ============================= */}
           {/* social */}
           {/* ============================= */}
-          <div className="footer__social">
+          {/* <div className="footer__social">
             <h3>{t('common:community')}</h3>
             <SocialMedia />
             <div>
@@ -91,7 +92,7 @@ const Footer: React.FC<{className?: string}> = ({ className }) => {
                 </Button>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Divider />

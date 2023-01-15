@@ -32,7 +32,7 @@ export const useStyles = () => {
             background: theme.palette.custom.primaryData.three,
           },
           '&.mainnet': {
-            background: theme.palette.primary.main,
+            background: theme.palette.custom.primaryData.one,
           },
         },
       });

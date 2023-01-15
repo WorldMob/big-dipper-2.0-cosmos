@@ -2,12 +2,11 @@ import React from 'react';
 import classnames from 'classnames';
 import Trans from 'next-translate/Trans';
 import { useRecoilValue } from 'recoil';
-import useTranslation from 'next-translate/useTranslation';
+// import useTranslation from 'next-translate/useTranslation';
 import FooterLogoLight from '@assets/WM_Logo_txt_purple_v1.svg';
 import FooterLogoDark from '@assets/WM_Logo_txt_white_v1.svg';
-import WMLogo from '@assets/WM_Logo.svg';
 import {
-  Button,
+  // Button,
   Divider,
   Typography,
 } from '@material-ui/core';
@@ -15,14 +14,14 @@ import {
   chainConfig, generalConfig,
 } from '@src/configs';
 import { readTheme } from '@recoil/settings/selectors';
-import { SocialMedia } from './components';
-import {
-  footerLinks, donateLink,
-} from './utils';
+// import { SocialMedia } from './components';
+// import {
+//   footerLinks, donateLink,
+// } from './utils';
 import { useStyles } from './styles';
 
 const Footer: React.FC<{className?: string}> = ({ className }) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const classes = useStyles();
   const theme = useRecoilValue(readTheme);
 

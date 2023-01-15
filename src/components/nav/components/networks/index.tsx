@@ -1,10 +1,11 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import { useRecoilValue } from 'recoil';
-import { readNetworks } from '@recoil/big_dipper_networks';
+// import { useRecoilValue } from 'recoil';
+// import { readNetworks } from '@recoil/big_dipper_networks';
+import WMLogo from '@assets/WM_Logo.svg?url';
 import { useStyles } from './styles';
 import { SingleNetwork } from './components';
-import WMLogo from '@assets/WM_Logo.svg?url';
+
 
 const Networks: React.FC<{
   className?: string;
@@ -14,7 +15,7 @@ const Networks: React.FC<{
   return (
     <div className={className}>
 
-      <div className={classes.networkList} >
+      <div className={classes.networkList}>
         <img src={WMLogo} alt="logo" />
         <div className="network">
           <Typography variant="h4">

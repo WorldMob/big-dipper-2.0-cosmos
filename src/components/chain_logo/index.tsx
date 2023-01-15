@@ -1,5 +1,7 @@
 import React from 'react';
+// eslint-disable-next-line import/no-duplicates
 import light from '@assets/WM_Logo.svg?url';
+// eslint-disable-next-line import/no-duplicates
 import dark from '@assets/WM_Logo.svg?url';
 import classnames from 'classnames';
 import { useStyles } from '../chain_icon/useStyles';

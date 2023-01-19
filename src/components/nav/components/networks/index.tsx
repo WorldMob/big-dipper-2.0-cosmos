@@ -22,7 +22,7 @@ const Networks: React.FC<{
           </Typography>
           <SingleNetwork
             className="mainnet"
-            key="aya_preview_001"
+            key="aya_mainnet"
             url={null}
             name="Mainnet"
             chainId="Coming Soon"

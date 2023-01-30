@@ -1,5 +1,8 @@
 import React from 'react';
 import { RecoilRoot } from 'recoil';
+import { RecoilEnv } from 'recoil';
+
+
 import { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation';
@@ -17,6 +20,8 @@ import {
   ADDITIONAL_LINK_TAGS_SEO,
   ADDITIONAL_META_TAGS,
 } from './utils';
+
+RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 
 function App(props: AppProps) {
   useApp();

@@ -32,7 +32,7 @@ const Networks: React.FC<{
             key="aya_preview_001"
             url={null}
             name="Testnet"
-            chainId="aya_preview_001"
+            chainId="Testnet"
           />
         </div>
       </div>

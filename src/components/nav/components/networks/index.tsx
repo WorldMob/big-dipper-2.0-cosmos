@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 // import { useRecoilValue } from 'recoil';
 // import { readNetworks } from '@recoil/big_dipper_networks';
 import WMLogo from '@assets/WM_Logo.svg?url';

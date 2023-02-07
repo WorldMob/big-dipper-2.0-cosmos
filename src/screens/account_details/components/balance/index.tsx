@@ -8,7 +8,7 @@ import { readMarket } from '@recoil/market';
 import {
   Typography,
   Divider,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   PieChart,
   Pie,

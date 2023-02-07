@@ -7,7 +7,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
-} from '@material-ui/core';
+} from '@mui/material';
 import { AvatarName } from '@components';
 import { columns } from './utils';
 import { getVoteKey } from '../../utils';

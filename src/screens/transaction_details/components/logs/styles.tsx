@@ -1,6 +1,6 @@
 import {
   makeStyles, createStyles,
-} from '@material-ui/styles';
+} from '@mui/styles';
 
 export const useGetStyles = () => {
   const useStyles = makeStyles((theme: any) => createStyles({

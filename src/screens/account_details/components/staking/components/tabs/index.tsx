@@ -5,7 +5,7 @@ import numeral from 'numeral';
 import {
   Tabs,
   Tab,
-} from '@material-ui/core';
+} from '@mui/material';
 import { a11yProps } from '@utils/allyProps';
 import { useStyles } from './styles';
 
@@ -32,7 +32,7 @@ const TabsHeader: React.FC<{
     <div className={classnames(className, classes.root)}>
       <Tabs
         variant="scrollable"
-        scrollButtons="off"
+        scrollButtons={false}
         value={tab}
         onChange={handleTabChange}
       >

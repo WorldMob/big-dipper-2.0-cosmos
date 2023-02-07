@@ -3,8 +3,8 @@ import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import {
   CheckCircle, Cancel,
-} from '@material-ui/icons';
-import { Typography } from '@material-ui/core';
+} from '@mui/icons-material';
+import { Typography } from '@mui/material';
 import { useStyles } from './styles';
 
 const Result: React.FC<{

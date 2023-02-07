@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   Typography,
   Dialog,
-} from '@material-ui/core';
+} from '@mui/material';
 import QRCode from 'qrcode.react';
 import {
   useScreenSize, useWindowOrigin,

@@ -5,7 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   Typography,
   Tooltip,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   useProfilesRecoil,
 } from '@recoil/profiles';

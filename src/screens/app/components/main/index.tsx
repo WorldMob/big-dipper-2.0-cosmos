@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider, Theme, StyledEngineProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import { ToastContainer } from 'react-toastify';
 import { AppProps } from 'next/app';
 import Countdown from '@screens/countdown';
@@ -14,6 +14,13 @@ import {
   useTheme,
   useGenesis,
 } from './hooks';
+
+
+declare module '@mui/styles/defaultTheme' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
 
 const Main = (props: AppProps) => {
   // =====================================
@@ -50,26 +57,28 @@ const Main = (props: AppProps) => {
   /* Adding a class to the document element to indicate the dark mode. */
   useEffect(() => {
     if (typeof document !== 'undefined' && document?.documentElement) {
-      document.documentElement.classList.toggle('mode-dark', muiTheme.palette.type === 'dark');
+      document.documentElement.classList.toggle('mode-dark', muiTheme.palette.mode === 'dark');
     }
-  }, [muiTheme.palette.type]);
+  }, [muiTheme.palette.mode]);
 
   return (
-    <ThemeProvider theme={muiTheme}>
-      <CssBaseline />
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        hideProgressBar
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      {Component}
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={muiTheme}>
+        <CssBaseline />
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          hideProgressBar
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        {Component}
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 };
 

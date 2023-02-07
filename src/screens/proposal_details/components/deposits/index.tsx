@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import dynamic from 'next/dynamic';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import useTranslation from 'next-translate/useTranslation';
 import { Box } from '@components';
 import {

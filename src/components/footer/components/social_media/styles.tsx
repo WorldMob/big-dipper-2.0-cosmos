@@ -1,10 +1,10 @@
 import Color from 'color';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 
 export const useStyles = () => {
   const styles = makeStyles(
     (theme) => {
-      const iconFill = theme.palette.type === 'light' ? theme.palette.custom.fonts.fontTwo : theme.palette.custom.general.icon;
+      const iconFill = theme.palette.mode === 'light' ? theme.palette.custom.fonts.fontTwo : theme.palette.custom.general.icon;
       return ({
         root: {
           '& .media': {

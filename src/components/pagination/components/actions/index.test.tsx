@@ -12,7 +12,7 @@ describe('components: Pagination/Actions', () => {
       <MockTheme>
         <Actions
           count={100}
-          onChangePage={jest.fn()}
+          onPageChange={jest.fn()}
           handleChangeRowsPerPage={jest.fn()}
           page={0}
           rowsPerPage={5}

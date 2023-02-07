@@ -14,8 +14,8 @@ import {
   Button,
   IconButton,
   Select,
-} from '@material-ui/core';
-import { Close as CloseIcon } from '@material-ui/icons';
+} from '@mui/material';
+import { Close as CloseIcon } from '@mui/icons-material';
 import {
   THEME_LIST, DATE_LIST, TX_LIST,
 } from '@recoil/settings';
@@ -54,7 +54,7 @@ const Settings: React.FC<{
         open={open}
         className={classes.dialog}
       >
-        <DialogTitle disableTypography className={classes.header}>
+        <DialogTitle className={classes.header}>
           <div className={classes.title}>
             <Typography variant="h2">
               {t('settings')}
@@ -65,10 +65,7 @@ const Settings: React.FC<{
               )
             </Typography>
           </div>
-          <IconButton
-            aria-label="close"
-            onClick={handleCancel}
-          >
+          <IconButton aria-label="close" onClick={handleCancel} size="large">
             <CloseIcon />
           </IconButton>
         </DialogTitle>

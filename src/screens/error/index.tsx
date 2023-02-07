@@ -6,7 +6,7 @@ import Trans from 'next-translate/Trans';
 import { HOME } from '@utils/go_to_page';
 import {
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { generalConfig } from '@configs';
 import { useStyles } from './styles';
 

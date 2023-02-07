@@ -1,7 +1,7 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import classnames from 'classnames';
-import { TablePagination } from '@material-ui/core';
+import { TablePagination } from '@mui/material';
 import { Actions } from './components';
 import { useStyles } from './styles';
 
@@ -49,7 +49,7 @@ const Pagination: React.FC<{
       count={total}
       rowsPerPage={rowsPerPage}
       page={page}
-      onChangePage={handleChangePage}
+      onPageChange={(e) => handleChangePage}
       ActionsComponent={(subProps) => {
         const additionalProps = {
           rowsPerPageOptions,

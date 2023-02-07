@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   ThemeProvider, createMuiTheme,
-} from '@material-ui/core/styles';
+} from '@mui/material/styles';
 
 import {
   StylesProvider, StylesOptions,
-} from '@material-ui/styles/';
+} from '@mui/styles/';
 
 import { lightTemplate } from '@styles';
 

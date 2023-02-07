@@ -4,7 +4,7 @@ import Link from 'next/link';
 import numeral from 'numeral';
 import {
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import useTranslation from 'next-translate/useTranslation';
 import { Box } from '@components';
 import { BLOCK_DETAILS } from '@utils/go_to_page';

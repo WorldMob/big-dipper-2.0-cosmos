@@ -5,7 +5,7 @@ import {
   Drawer,
   MenuItem,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import Language from '@assets/icon-language.svg';
@@ -13,7 +13,7 @@ import ThemeIcon from '@assets/icon-theme.svg';
 import { THEME_LIST } from '@recoil/settings';
 import {
   ExpandMoreOutlined,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import { useStyles } from './styles';
 import { MenuItems } from '../../..';
 import {
@@ -62,7 +62,7 @@ const Menu = (props: MenuProps) => {
                     locale={l}
                     passHref
                   >
-                    <MenuItem button component="a">
+                    <MenuItem component="a">
                       {t(l)}
                     </MenuItem>
                   </Link>
@@ -86,7 +86,7 @@ const Menu = (props: MenuProps) => {
               .filter((l) => l !== themeOptions.theme)
               .map((l) => (
                 <div key={l}>
-                  <MenuItem button component="a" onClick={() => themeOptions.handleChangeTheme(l)}>
+                  <MenuItem component="a" onClick={() => themeOptions.handleChangeTheme(l)}>
                     {t(l)}
                   </MenuItem>
                 </div>

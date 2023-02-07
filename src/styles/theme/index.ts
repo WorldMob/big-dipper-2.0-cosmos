@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import { ThemeOptions } from '@material-ui/core/styles';
+import { DeprecatedThemeOptions } from '@mui/material/styles';
 
 import { darkThemeOverride } from './dark';
 import { lightThemeOverride } from './light';
@@ -189,10 +189,10 @@ export const common = {
   },
 };
 
-export const lightTemplate:ThemeOptions = R.mergeDeepLeft(lightThemeOverride, common);
-export const darkTemplate:ThemeOptions = R.mergeDeepLeft(darkThemeOverride, common);
-export const deuteranopiaTemplate:ThemeOptions = R.mergeDeepLeft(deuteranopiaThemeOverride, common);
-export const tritanopiaTemplate:ThemeOptions = R.mergeDeepLeft(tritanopiaThemeOverride, common);
+export const lightTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(lightThemeOverride, common);
+export const darkTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(darkThemeOverride, common);
+export const deuteranopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(deuteranopiaThemeOverride, common);
+export const tritanopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(tritanopiaThemeOverride, common);
 
 // export const lightTheme = createMuiTheme(lightTemplate);
 // export const darkTheme = createMuiTheme(darkTemplate);

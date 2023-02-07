@@ -1,6 +1,6 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import { Box } from '@components';
 import { useGetStyles } from './styles';
 

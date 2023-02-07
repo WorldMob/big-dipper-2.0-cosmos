@@ -2,7 +2,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import Link from 'next/link';
-import { ExpandMore } from '@material-ui/icons';
+import { ExpandMore } from '@mui/icons-material';
 import { useRecoilValue } from 'recoil';
 import { readSelectedNetwork } from '@recoil/big_dipper_networks';
 import LogoWhite from '@assets/WM_Logo.svg';

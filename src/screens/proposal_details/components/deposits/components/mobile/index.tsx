@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import {
   Divider, Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { formatNumber } from '@utils/format_token';
 import dayjs, { formatDayJs } from '@utils/dayjs';
 import { AvatarName } from '@components';

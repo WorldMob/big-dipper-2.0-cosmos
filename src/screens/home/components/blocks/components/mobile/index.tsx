@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { BLOCK_DETAILS } from '@utils/go_to_page';
 import {
   Typography, Divider,
-} from '@material-ui/core';
+} from '@mui/material';
 import { getMiddleEllipsis } from '@utils/get_middle_ellipsis';
 import {
   SingleBlockMobile,

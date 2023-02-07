@@ -11,7 +11,7 @@ import {
 } from '@components';
 import {
   Typography, Divider,
-} from '@material-ui/core';
+} from '@mui/material';
 import { VariableSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 import AutoSizer from 'react-virtualized-auto-sizer';

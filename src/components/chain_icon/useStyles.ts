@@ -1,23 +1,15 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
 
-export const useStyles = () => {
-  const styles = makeStyles(
-    () => {
-      return ({
-        light: {
-          '.mode-dark &': {
-            display: 'none',
-          },
-        },
-        dark: {
-          display: 'none',
-          '.mode-dark &': {
-            display: 'initial',
-          },
-        },
-      });
+export const useStyles = makeStyles(styles => ({
+  light: {
+    '.mode-dark &': {
+      display: 'none',
     },
-  )();
-
-  return styles;
-};
+  },
+  dark: {
+    display: 'none',
+    '.mode-dark &': {
+      display: 'initial',
+    },
+  },
+}));

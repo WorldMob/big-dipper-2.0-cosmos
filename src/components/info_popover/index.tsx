@@ -2,8 +2,8 @@ import React from 'react';
 import {
   Popover,
   Paper,
-} from '@material-ui/core';
-import { HelpOutline } from '@material-ui/icons';
+} from '@mui/material';
+import { HelpOutline } from '@mui/icons-material';
 import classnames from 'classnames';
 import { useInfoPopover } from './hooks';
 import { useStyles } from './styles';

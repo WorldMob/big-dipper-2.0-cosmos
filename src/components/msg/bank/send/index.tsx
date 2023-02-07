@@ -4,7 +4,7 @@ import {
   formatToken, formatNumber,
 } from '@utils/format_token';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import { Name } from '@components';
 import { MsgSend } from '@models';
 import {

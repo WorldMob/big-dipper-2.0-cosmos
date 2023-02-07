@@ -2,7 +2,7 @@
 import WMLogotxtpurplev2 from '@assets/WM_Logo_txt_purple_v2.svg';
 import WMLogotxtwhitev2 from '@assets/WM_Logo_txt_white_v2.svg';
 import { ChainLogo } from '@components';
-import { LinearProgress } from '@material-ui/core';
+import { LinearProgress } from '@mui/material';
 import { readTheme } from '@recoil/settings';
 import React from 'react';
 import { useRecoilValue } from 'recoil';

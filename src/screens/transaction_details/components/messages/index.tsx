@@ -8,7 +8,7 @@ import {
   Typography,
   Switch,
   FormControlLabel,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   useList,
   useListRow,

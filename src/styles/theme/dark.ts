@@ -16,7 +16,7 @@ export const darkThemeOverride = {
     },
   },
   palette: {
-    type: 'dark',
+    mode: 'dark',
     primary: {
       main: '#6B9EFF',
       contrastText: '#fff',

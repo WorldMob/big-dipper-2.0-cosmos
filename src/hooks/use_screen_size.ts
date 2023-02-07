@@ -1,7 +1,7 @@
 import {
   useState, useEffect,
 } from 'react';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/styles';
 
 export const useScreenSize = () => {
   const isClient = typeof window === 'object';

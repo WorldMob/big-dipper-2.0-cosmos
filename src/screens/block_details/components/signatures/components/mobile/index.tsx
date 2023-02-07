@@ -5,7 +5,7 @@ import useTranslation from 'next-translate/useTranslation';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import {
   Divider, Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   useList,
   useListRow,

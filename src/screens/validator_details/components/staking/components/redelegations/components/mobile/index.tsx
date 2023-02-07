@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import dayjs, { formatDayJs } from '@utils/dayjs';
 import {
   Divider, Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useRecoilValue } from 'recoil';
 import { readDate } from '@recoil/settings';
 import { AvatarName } from '@components';

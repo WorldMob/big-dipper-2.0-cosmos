@@ -9,7 +9,7 @@ import { readDate } from '@recoil/settings';
 import {
   Typography,
   Divider,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   SingleProposal,
   Box,

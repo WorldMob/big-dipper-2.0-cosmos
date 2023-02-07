@@ -6,7 +6,7 @@ import dayjs from '@utils/dayjs';
 import {
   Typography,
   Divider,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   SingleTransactionMobile, Result,
 } from '@components';

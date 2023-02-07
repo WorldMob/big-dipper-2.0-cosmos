@@ -9,7 +9,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
-} from '@material-ui/core';
+} from '@mui/material';
 import dayjs, { formatDayJs } from '@utils/dayjs';
 import { columns } from './utils';
 

@@ -9,7 +9,7 @@ import {
   // Button,
   Divider,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   chainConfig, generalConfig,
 } from '@src/configs';

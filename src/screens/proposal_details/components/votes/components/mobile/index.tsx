@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   Divider,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { AvatarName } from '@components';
 import { useStyles } from './styles';
 import { getVoteKey } from '../../utils';

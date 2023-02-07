@@ -6,7 +6,7 @@ import {
   TableBody,
   TableCell,
   TableRow,
-} from '@material-ui/core';
+} from '@mui/material';
 
 const SoftwareUpgrade: React.FC<{
   className?: string;

@@ -7,7 +7,7 @@ import { BLOCK_DETAILS } from '@utils/go_to_page';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import InfiniteLoader from 'react-window-infinite-loader';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import { getMiddleEllipsis } from '@utils/get_middle_ellipsis';
 import { VariableSizeGrid as Grid } from 'react-window';
 import {

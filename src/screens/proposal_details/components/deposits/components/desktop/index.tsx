@@ -7,7 +7,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
-} from '@material-ui/core';
+} from '@mui/material';
 import { AvatarName } from '@components';
 import { formatNumber } from '@utils/format_token';
 import { useRecoilValue } from 'recoil';

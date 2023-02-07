@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import dynamic from 'next/dynamic';
 import {
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   Pagination, Box,
 } from '@components';

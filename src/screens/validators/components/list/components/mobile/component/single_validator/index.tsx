@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import {
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useStyles } from './styles';
 
 const SingleValidator: React.FC<{

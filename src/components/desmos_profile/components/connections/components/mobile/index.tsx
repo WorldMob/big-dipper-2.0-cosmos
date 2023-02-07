@@ -7,7 +7,7 @@ import { readDate } from '@recoil/settings';
 import {
   Divider,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useStyles } from './styles';
 
 const Mobile: React.FC<{

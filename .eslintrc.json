@@ -40,7 +40,9 @@
         "src/**/types.ts"
       ],
       "rules": {
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "indent": "off",
+        "max-len": "off"
       }
     },
     {
@@ -48,7 +50,9 @@
         "tests/**/*"
       ],
       "rules": {
-        "no-undef": "off"
+        "no-undef": "off",
+        "indent": "off",
+        "max-len": "off"
       }
     },
     {
@@ -59,11 +63,15 @@
       ],
       "rules": {
         "no-undef": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "indent": "off",
+        "max-len": "off"
       }
     }
   ],
   "rules": {
+    "indent": "off",
+    "max-len": "off",
     "linebreak-style": 0,
     "react/destructuring-assignment": "off",
     "no-bitwise": "off",
@@ -93,6 +101,12 @@
     "lines-between-class-members": "off",
     "react/no-array-index-key": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "function-paren-newline": "off",
+    "react/no-unused-prop-types": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "@typescript-eslint/no-empty-interface": "off",
     "react/jsx-first-prop-new-line": [
       "error",
       "multiline"

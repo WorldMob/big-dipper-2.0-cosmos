@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { adaptV4Theme } from '@mui/material/styles';
 import { useRecoilValue } from 'recoil';
-import { createMuiTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import {
   readTheme,
   getThemeTemplate,
@@ -13,7 +12,7 @@ export const useTheme = () => {
   const theme = useRecoilValue(readTheme);
 
   return {
-    muiTheme: createMuiTheme(adaptV4Theme(getThemeTemplate(theme))),
+    muiTheme: createTheme(getThemeTemplate(theme)),
   };
 };
 

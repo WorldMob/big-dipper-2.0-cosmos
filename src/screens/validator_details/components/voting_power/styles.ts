@@ -2,8 +2,7 @@ import { makeStyles } from '@mui/styles';
 import Color from 'color';
 
 export const useStyles = (percentage: number) => {
-  const styles = makeStyles(
-    (theme) => {
+  const styles = makeStyles((theme) => {
       return ({
         root: {
           '& .MuiTypography-h2': {
@@ -62,6 +61,5 @@ export const useStyles = (percentage: number) => {
       });
     }, { index: 1 },
   )();
-
   return styles;
 };

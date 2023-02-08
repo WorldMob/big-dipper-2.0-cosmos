@@ -130,7 +130,6 @@ export const common = {
       fonts: {
         fontFive: '#FFFFFF',
         highlight: '#1D86FF', // links
-        // highlight: '#56B4E9', // links
       },
       condition: {
         zero: '#E8E8E8',
@@ -193,7 +192,3 @@ export const lightTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(lightThemeOv
 export const darkTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(darkThemeOverride, common);
 export const deuteranopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(deuteranopiaThemeOverride, common);
 export const tritanopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(tritanopiaThemeOverride, common);
-
-// export const lightTheme = createMuiTheme(lightTemplate);
-// export const darkTheme = createMuiTheme(darkTemplate);
-// export const deuteranopiaTheme = createMuiTheme(deuteranopiaTemplate);

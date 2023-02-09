@@ -1,12 +1,11 @@
-/* eslint-disable import/no-duplicates */
 import React from 'react';
 import classnames from 'classnames';
 import Link from 'next/link';
-import { ExpandMore } from '@mui/icons-material';
+import { ExpandMore } from '@material-ui/icons';
 import { useRecoilValue } from 'recoil';
 import { readSelectedNetwork } from '@recoil/big_dipper_networks';
-import LogoWhite from '@assets/WM_Logo.svg';
-import LogoDark from '@assets/WM_Logo.svg';
+import BigDipperLogoWhite from '@assets/WM_Logo.svg';
+import BigDipperLogoRed from '@assets/big-dipper-red.svg';
 import { HOME } from '@utils/go_to_page';
 import { readTheme } from '@recoil/settings';
 import { useStyles } from './styles';
@@ -27,9 +26,9 @@ const Navbar = (props:NavbarProps) => {
       <Link href={HOME}>
         <a className={classes.a}>
           {theme === 'light' ? (
-            <LogoDark className={classes.logo} />
+            <BigDipperLogoRed className={classes.logo} />
           ) : (
-            <LogoWhite className={classes.logo} />
+            <BigDipperLogoWhite className={classes.logo} />
           )}
         </a>
       </Link>

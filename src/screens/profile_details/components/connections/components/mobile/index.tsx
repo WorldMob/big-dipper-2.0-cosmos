@@ -7,7 +7,7 @@ import { readDate } from '@recoil/settings';
 import {
   Divider,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import { chainConfig } from '@src/configs';
 import Link from 'next/link';
 import { ACCOUNT_DETAILS } from '@utils/go_to_page';

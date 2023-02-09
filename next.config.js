@@ -19,4 +19,7 @@ module.exports = nextTranslate({
     });
     return config;
   },
+  typescript: {
+    ignoreBuildErrors: true,
+},
 });

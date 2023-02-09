@@ -1,7 +1,5 @@
 import React from 'react';
-import { Typography } from '@mui/material';
-// import { useRecoilValue } from 'recoil';
-// import { readNetworks } from '@recoil/big_dipper_networks';
+import { Typography } from '@material-ui/core';
 import WMLogo from '@assets/WM_Logo.svg?url';
 import { useStyles } from './styles';
 import { SingleNetwork } from './components';
@@ -22,7 +20,7 @@ const Networks: React.FC<{
           </Typography>
           <SingleNetwork
             className="mainnet"
-            key="aya_mainnet"
+            key="aya_preview_001"
             url={null}
             name="Mainnet"
             chainId="Coming Soon"
@@ -32,7 +30,7 @@ const Networks: React.FC<{
             key="aya_preview_001"
             url={null}
             name="Testnet"
-            chainId="Testnet"
+            chainId="aya_preview_001"
           />
         </div>
       </div>

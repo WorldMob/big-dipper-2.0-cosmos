@@ -3,7 +3,7 @@ export const useTablePaginationActions = (props: {
   backIconButtonProps?: any;
   count: number;
   nextIconButtonProps?: any;
-  onPageChange: (event: React.MouseEvent<HTMLButtonElement> | null, page: number) => void;
+  onChangePage: (event: React.MouseEvent<HTMLButtonElement> | null, page: number) => void;
   handleChangeRowsPerPage: (selectedRowsPerPage: number) => void;
   page: number;
   rowsPerPage: number;
@@ -13,29 +13,29 @@ export const useTablePaginationActions = (props: {
     count,
     page,
     rowsPerPage,
-    onPageChange,
+    onChangePage,
     pageNeighbors = 1,
     handleChangeRowsPerPage,
   } = props;
 
   const handleFirstPage = () => {
-    onPageChange(null, 0);
+    onChangePage(null, 0);
   };
 
   const handleNextPage = () => {
     if (page + 1 <= Math.ceil(count / rowsPerPage) - 1) {
-      onPageChange(null, page + 1);
+      onChangePage(null, page + 1);
     }
   };
 
   const handlePreviousPage = () => {
     if (page - 1 >= 0) {
-      onPageChange(null, page - 1);
+      onChangePage(null, page - 1);
     }
   };
 
   const handleLastPage = () => {
-    onPageChange(null, Math.ceil(count / rowsPerPage) - 1);
+    onChangePage(null, Math.ceil(count / rowsPerPage) - 1);
   };
 
   const getAvailablePages = () => {

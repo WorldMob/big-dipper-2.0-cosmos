@@ -7,7 +7,7 @@ import {
   Table,
   TableBody,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import numeral from 'numeral';
 import dayjs from '@utils/dayjs';

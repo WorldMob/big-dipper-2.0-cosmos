@@ -1,4 +1,4 @@
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Color from 'color';
 
 export const useStyles = (percentage: number, topVotingPower:boolean) => {

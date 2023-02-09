@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { useStyles } from './styles';
 
 const ConditionExplanation = () => {

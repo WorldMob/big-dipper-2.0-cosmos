@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import {
   TransactionListDetails,

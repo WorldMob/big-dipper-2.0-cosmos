@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import {
   InfoPopover, ConditionExplanation,
 } from '@components';

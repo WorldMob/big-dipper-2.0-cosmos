@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import { DeprecatedThemeOptions } from '@mui/material/styles';
+import { ThemeOptions } from '@material-ui/core/styles';
 
 import { darkThemeOverride } from './dark';
 import { lightThemeOverride } from './light';
@@ -130,6 +130,7 @@ export const common = {
       fonts: {
         fontFive: '#FFFFFF',
         highlight: '#1D86FF', // links
+        // highlight: '#56B4E9', // links
       },
       condition: {
         zero: '#E8E8E8',
@@ -188,7 +189,11 @@ export const common = {
   },
 };
 
-export const lightTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(lightThemeOverride, common);
-export const darkTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(darkThemeOverride, common);
-export const deuteranopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(deuteranopiaThemeOverride, common);
-export const tritanopiaTemplate:DeprecatedThemeOptions = R.mergeDeepLeft(tritanopiaThemeOverride, common);
+export const lightTemplate:ThemeOptions = R.mergeDeepLeft(lightThemeOverride, common);
+export const darkTemplate:ThemeOptions = R.mergeDeepLeft(darkThemeOverride, common);
+export const deuteranopiaTemplate:ThemeOptions = R.mergeDeepLeft(deuteranopiaThemeOverride, common);
+export const tritanopiaTemplate:ThemeOptions = R.mergeDeepLeft(tritanopiaThemeOverride, common);
+
+// export const lightTheme = createTheme(lightTemplate);
+// export const darkTheme = createTheme(darkTemplate);
+// export const deuteranopiaTheme = createTheme(deuteranopiaTemplate);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Trans from 'next-translate/Trans';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { Name } from '@components';
 import { MsgVersion } from '@models';
 import { useProfileRecoil } from '@recoil/profiles';

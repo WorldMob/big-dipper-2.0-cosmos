@@ -4,7 +4,7 @@ import {
   Drawer,
   AppBar,
   ClickAwayListener,
-} from '@mui/material';
+} from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
 import { readTheme } from '@recoil/settings/selectors';
 import WMLogotxtWhite from '@assets/WM_Logo_txt_white_v1.svg';

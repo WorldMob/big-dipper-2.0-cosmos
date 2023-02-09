@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import numeral from 'numeral';
 import Link from 'next/link';
 import dayjs, { formatDayJs } from '@utils/dayjs';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
 import { readDate } from '@recoil/settings';
 import useTranslation from 'next-translate/useTranslation';

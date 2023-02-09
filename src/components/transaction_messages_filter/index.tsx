@@ -6,9 +6,9 @@ import {
   Select,
   InputBase,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import FilterIcon from '@assets/icon-filter.svg';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { getFilterLabels } from './utils';
 import { useStyles } from './styles';
 import { useTransactionsFilter } from './hooks';
@@ -41,6 +41,7 @@ const TransactionMessagesFilter: React.FC<{
           vertical: 'top',
           horizontal: 'left',
         },
+        getContentAnchorEl: null,
       }}
       value={selectedFilter}
       renderValue={

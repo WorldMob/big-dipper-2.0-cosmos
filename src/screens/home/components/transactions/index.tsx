@@ -3,7 +3,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import {
   Typography, Divider,
-} from '@mui/material';
+} from '@material-ui/core';
 import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import { TRANSACTIONS } from '@utils/go_to_page';

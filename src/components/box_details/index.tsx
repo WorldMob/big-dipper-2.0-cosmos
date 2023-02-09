@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { Box } from '@components';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { useStyles } from './styles';
 
 const BoxDetails: React.FC<{

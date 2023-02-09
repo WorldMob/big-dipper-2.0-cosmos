@@ -2,7 +2,7 @@
 import { ChainLogo, Loading } from '@components';
 import { chainConfig } from '@configs';
 import { useInterval } from '@hooks';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { readTheme } from '@recoil/settings';
 import dayjs from '@utils/dayjs';
 import React, { useState } from 'react';

@@ -2,8 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import {
   InputBase, InputAdornment,
-} from '@mui/material';
-import { Search as SearchIcon } from '@mui/icons-material';
+} from '@material-ui/core';
+import { Search as SearchIcon } from '@material-ui/icons';
 import { useStyles } from './styles';
 import { useSearch } from './hooks';
 

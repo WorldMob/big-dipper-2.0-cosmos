@@ -2,7 +2,7 @@ import React from 'react';
 import * as R from 'ramda';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import {
   formatToken, formatNumber,
 } from '@utils/format_token';

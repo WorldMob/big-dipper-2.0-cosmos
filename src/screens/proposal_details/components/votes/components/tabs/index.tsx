@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   Tabs,
   Tab,
-} from '@mui/material';
+} from '@material-ui/core';
 import { a11yProps } from '@utils/allyProps';
 import { tabLabels } from './utils';
 import { useStyles } from './styles';
@@ -30,7 +30,7 @@ const TabsHeader: React.FC<{
     <div className={classnames(className, classes.root)}>
       <Tabs
         variant="scrollable"
-        scrollButtons={false}
+        scrollButtons="off"
         value={tab}
         onChange={handleTabChange}
       >

@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import WMLogotxtpurplev2 from '@assets/WM_Logo_txt_purple_v2.svg';
-import WMLogotxtwhitev2 from '@assets/WM_Logo_txt_white_v2.svg';
+import BigDipperLogoRed from '@assets/big-dipper-red.svg';
+import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
 import { ChainLogo } from '@components';
-import { LinearProgress } from '@mui/material';
+import { LinearProgress } from '@material-ui/core';
 import { readTheme } from '@recoil/settings';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
@@ -18,9 +17,9 @@ const InitialLoad = () => {
         <ChainLogo className={classes.logo} alt="logo" />
         <LinearProgress className={classes.divider} />
         {theme === 'light' ? (
-          <WMLogotxtpurplev2 />
+          <BigDipperLogoRed />
         ) : (
-          <WMLogotxtwhitev2 />
+          <BigDipperLogoWhite />
         )}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Box } from '@mui/material';
+import { Box } from '@material-ui/core';
 import BigDipperLogoWhite from '@assets/WM_Logo_txt_white_v1.svg';
 import BigDipperLogoRed from '@assets/WM_Logo_txt_purple_v1.svg';
 import { Networks } from '@src/components/nav/components';

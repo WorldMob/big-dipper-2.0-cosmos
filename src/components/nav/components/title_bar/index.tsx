@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { useRecoilValue } from 'recoil';
 import { readMarket } from '@recoil/market';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { ChainLogo } from '@components';
 import { useStyles } from './styles';
 import { formatMarket } from './utils';

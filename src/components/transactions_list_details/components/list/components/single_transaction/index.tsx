@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import {
   Typography,
   Divider,
-} from '@mui/material';
+} from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import { useStyles } from './styles';
 

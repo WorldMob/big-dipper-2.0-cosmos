@@ -22,7 +22,7 @@ export const deuteranopiaThemeOverride = {
     },
   },
   palette: {
-    mode: 'dark',
+    type: 'dark',
     general: {
       icon,
     },

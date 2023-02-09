@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = () => {
   const styles = makeStyles(

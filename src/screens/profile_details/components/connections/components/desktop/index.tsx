@@ -11,7 +11,7 @@ import {
   TableCell,
   TableBody,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import dayjs, { formatDayJs } from '@utils/dayjs';
 import Link from 'next/link';
 import { ACCOUNT_DETAILS } from '@utils/go_to_page';

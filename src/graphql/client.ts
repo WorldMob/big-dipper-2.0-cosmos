@@ -12,9 +12,6 @@ import {
 } from '@apollo/client/utilities';
 import { WebSocketLink } from '@apollo/client/link/ws';
 
-import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
-import { createClient } from 'graphql-ws';
-
 import { useMemo } from 'react';
 
 const defaultOptions:any = {
@@ -34,26 +31,13 @@ const httpLink = new HttpLink({
   uri: process.env.NEXT_PUBLIC_GRAPHQL_URL,
 });
 
-// const wsLink = new WebSocketLink({
-//   uri: process.env.NEXT_PUBLIC_GRAPHQL_WS ?? 'wss://localhost:3000',
-//   options: {
-//     reconnect: true,
-//   },
-//   webSocketImpl: WebSocket,
-// });
-
-
-// const wsLink = new GraphQLWsLink(
-//   createClient({
-//     uri: process.env.NEXT_PUBLIC_GRAPHQL_WS ?? 'wss://localhost:3000',
-//   }),
-// );
-const wsLink = new GraphQLWsLink(
-  createClient({
-    webSocketImpl: WebSocket,
-    url: process.env.NEXT_PUBLIC_GRAPHQL_WS,
-  }),
-);
+const wsLink = new WebSocketLink({
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_WS ?? 'wss://localhost:3000',
+  options: {
+    reconnect: true,
+  },
+  webSocketImpl: WebSocket,
+});
 
 const link = typeof window !== 'undefined' ? split(
   ({ query }) => {

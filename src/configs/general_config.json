@@ -1,11 +1,11 @@
 {
   "maintainer": {
-    "name": "Paddy",
-    "url": "https://twitter.com/PoolShamrock"
+    "name": "Forbole",
+    "url": "https://forbole.com"
   },
   "github": {
     "reportIssue": "https://github.com/forbole/big-dipper-2.0-cosmos/issues"
   },
-  "previewImage": "https://wmstaticassets.blob.core.windows.net/uploads/web/assets/uploads/How_World_Mobile_is_connecting_the_unconnected_infographic_preview_de2a096c3b.png",
+  "previewImage": "https://s3.bigdipper.live/cosmoshub.png",
   "version": "base-v2.1.0"
 }

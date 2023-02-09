@@ -9,7 +9,7 @@ import {
 } from '@utils/go_to_page';
 import {
   Typography, Divider,
-} from '@mui/material';
+} from '@material-ui/core';
 import { VariableSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 import AutoSizer from 'react-virtualized-auto-sizer';

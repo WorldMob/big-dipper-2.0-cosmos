@@ -7,8 +7,8 @@ import {
   DialogTitle,
   IconButton,
   DialogContent,
-} from '@mui/material';
-import { Close as CloseIcon } from '@mui/icons-material';
+} from '@material-ui/core';
+import { Close as CloseIcon } from '@material-ui/icons';
 import { Pagination } from '@components';
 import {
   usePagination,
@@ -47,11 +47,14 @@ const Connections: React.FC<{
       open={open}
       className={classes.dialog}
     >
-      <DialogTitle className={classes.header}>
+      <DialogTitle disableTypography className={classes.header}>
         <Typography variant="h2">
           {t('connectionsTitle')}
         </Typography>
-        <IconButton aria-label="close" onClick={handleClose} size="large">
+        <IconButton
+          aria-label="close"
+          onClick={handleClose}
+        >
           <CloseIcon />
         </IconButton>
       </DialogTitle>

@@ -7,7 +7,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
-} from '@mui/material';
+} from '@material-ui/core';
 import { OtherTokenType } from '@src/screens/account_details/types';
 import { formatNumber } from '@utils/format_token';
 import { columns } from './utils';

@@ -1,12 +1,12 @@
 import * as R from 'ramda';
 import Big from 'big.js';
 import { formatNumber } from '@utils/format_token';
-import { DeprecatedThemeOptions } from '@mui/material/styles';
+import { ThemeOptions } from '@material-ui/core/styles';
 import { VotesType } from './types';
 
 type FormatGraphType = {
   data:VotesType;
-  theme:DeprecatedThemeOptions;
+  theme:ThemeOptions;
   total: Big;
 }
 export const formatGraphData = ({

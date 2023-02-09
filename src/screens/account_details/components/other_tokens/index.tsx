@@ -11,7 +11,7 @@ import {
   usePagination,
   useScreenSize,
 } from '@hooks';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { useStyles } from './styles';
 import { OtherTokenType } from '../../types';
 

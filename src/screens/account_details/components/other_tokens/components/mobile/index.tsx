@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   Divider,
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import { OtherTokenType } from '@src/screens/account_details/types';
 import { formatNumber } from '@utils/format_token';
 import { useStyles } from './styles';

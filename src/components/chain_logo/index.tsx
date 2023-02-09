@@ -1,7 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/no-duplicates
-import light from '@assets/WM_Logo.svg?url';
-// eslint-disable-next-line import/no-duplicates
+// import light from '@assets/WM_Logo.svg?url';
 import dark from '@assets/WM_Logo.svg?url';
 import classnames from 'classnames';
 import { useStyles } from '../chain_icon/useStyles';
@@ -12,7 +10,7 @@ const Logo = ({
   const classes = useStyles();
   return (
     <>
-      <img src={light} alt="" {...props} className={classnames(className, classes.light)} />
+      {/* <img src={light} alt="" {...props} className={classnames(className, classes.light)} /> */}
       <img src={dark} alt="" {...props} className={classnames(className, classes.dark)} />
     </>
   );

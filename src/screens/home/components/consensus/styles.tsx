@@ -1,6 +1,6 @@
 import {
   makeStyles, useTheme,
-} from '@mui/styles';
+} from '@material-ui/core/styles';
 import Color from 'color';
 
 export const useStyles = () => {

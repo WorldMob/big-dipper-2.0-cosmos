@@ -11,7 +11,7 @@ import {
   TableCell,
   Table,
   TableBody,
-} from '@mui/material';
+} from '@material-ui/core';
 import { getMiddleEllipsis } from '@utils/get_middle_ellipsis';
 import {
   BLOCK_DETAILS, TRANSACTION_DETAILS,

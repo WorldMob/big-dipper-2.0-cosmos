@@ -7,7 +7,7 @@ import {
   Select,
   MenuItem,
   InputBase,
-} from '@mui/material';
+} from '@material-ui/core';
 import NextIcon from '@assets/icon-next.svg';
 import NextFastIcon from '@assets/icon-next-fast.svg';
 import { useStyles } from './styles';
@@ -22,7 +22,7 @@ const Actions: React.FC<{
   backIconButtonProps?: any;
   count: number;
   nextIconButtonProps?: any;
-  onPageChange: (event: React.MouseEvent<HTMLButtonElement> | null, page: number) => void;
+  onChangePage: (event: React.MouseEvent<HTMLButtonElement> | null, page: number) => void;
   handleChangeRowsPerPage: (selectedRowsPerPage: number) => void;
   page: number;
   rowsPerPage: number;
@@ -35,7 +35,7 @@ const Actions: React.FC<{
     count,
     page,
     rowsPerPage,
-    onPageChange,
+    onChangePage,
     className,
     rowsPerPageOptions,
   } = props;
@@ -61,7 +61,7 @@ const Actions: React.FC<{
           onClick={handleFirstPage}
           disabled={disablePrevious}
           aria-label="first page"
-          size="large">
+        >
           <NextFastIcon className={classes.prev} />
         </IconButton>
       </li>
@@ -72,7 +72,7 @@ const Actions: React.FC<{
           onClick={handlePreviousPage}
           disabled={disablePrevious}
           aria-label="previous page"
-          size="large">
+        >
           <NextIcon className={classes.prev} />
         </IconButton>
       </li>
@@ -81,7 +81,7 @@ const Actions: React.FC<{
           component="li"
           variant="body2"
           key={x}
-          onClick={() => onPageChange(null, x)}
+          onClick={() => onChangePage(null, x)}
           className={classnames(classes.button, classes.pageButton, {
             selected: page === x,
           })}
@@ -96,7 +96,7 @@ const Actions: React.FC<{
           onClick={handleNextPage}
           disabled={disableNext}
           aria-label="next page"
-          size="large">
+        >
           <NextIcon />
         </IconButton>
       </li>
@@ -107,7 +107,7 @@ const Actions: React.FC<{
           onClick={handleLastPage}
           disabled={disableNext}
           aria-label="last page"
-          size="large">
+        >
           <NextFastIcon />
         </IconButton>
       </li>
@@ -117,7 +117,7 @@ const Actions: React.FC<{
             <Select
               className={classes.rowSelection}
               value={rowsPerPage}
-              onChange={(e) => handleRowOptionChange}
+              onChange={handleRowOptionChange}
               input={<InputBase />}
             >
               {

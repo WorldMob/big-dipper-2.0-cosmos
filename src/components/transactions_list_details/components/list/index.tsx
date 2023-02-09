@@ -9,7 +9,7 @@ import {
 } from '@utils/go_to_page';
 import {
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import { VariableSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';

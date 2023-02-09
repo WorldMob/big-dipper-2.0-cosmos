@@ -6,7 +6,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
-} from '@mui/material';
+} from '@material-ui/core';
 
 const ParamsChange: React.FC<{
   className?: string;

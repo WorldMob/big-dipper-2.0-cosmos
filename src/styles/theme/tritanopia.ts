@@ -22,7 +22,7 @@ export const tritanopiaThemeOverride = {
     },
   },
   palette: {
-    mode: 'dark',
+    type: 'dark',
     general: {
       icon,
     },

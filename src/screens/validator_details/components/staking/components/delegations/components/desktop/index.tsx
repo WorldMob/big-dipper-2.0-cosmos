@@ -7,7 +7,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
-} from '@mui/material';
+} from '@material-ui/core';
 import {
   AvatarName,
 } from '@components';

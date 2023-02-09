@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import {
   Typography,
-} from '@mui/material';
+} from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import { useStyles } from './styles';
 

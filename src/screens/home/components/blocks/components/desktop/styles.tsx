@@ -1,6 +1,6 @@
 import {
   makeStyles,
-} from '@mui/styles';
+} from '@material-ui/core/styles';
 
 export const useStyles = () => {
   const styles = makeStyles(

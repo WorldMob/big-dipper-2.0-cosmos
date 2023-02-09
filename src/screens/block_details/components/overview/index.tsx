@@ -2,7 +2,7 @@ import React from 'react';
 import numeral from 'numeral';
 import dayjs, { formatDayJs } from '@utils/dayjs';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
 import { useProfileRecoil } from '@recoil/profiles';
 import { readDate } from '@recoil/settings';

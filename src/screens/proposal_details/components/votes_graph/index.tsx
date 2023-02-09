@@ -7,7 +7,7 @@ import {
   InfoPopover,
 } from '@components';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@mui/material';
+import { Typography } from '@material-ui/core';
 import {
   PieChart,
   Pie,

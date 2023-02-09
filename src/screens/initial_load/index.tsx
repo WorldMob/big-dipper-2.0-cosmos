@@ -1,4 +1,4 @@
-import BigDipperLogoRed from '@assets/big-dipper-red.svg';
+import BigDipperLogoRed from '@assets/WM_Logo_txt_purple_v1.svg';
 import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
 import { ChainLogo } from '@components';
 import { LinearProgress } from '@material-ui/core';

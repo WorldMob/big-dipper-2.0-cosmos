@@ -1,5 +1,6 @@
-import BigDipperLogoRed from '@assets/WM_Logo_txt_purple_v1.svg';
-import BigDipperLogoWhite from '@assets/big-dipper-white.svg';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import Paddy from '@assets/paddy.png';
+import WMLogotxtwhitev2 from '@assets/WM_Logo_txt_white_v2.svg';
 import { ChainLogo } from '@components';
 import { LinearProgress } from '@material-ui/core';
 import { readTheme } from '@recoil/settings';
@@ -16,11 +17,7 @@ const InitialLoad = () => {
       <div>
         <ChainLogo className={classes.logo} alt="logo" />
         <LinearProgress className={classes.divider} />
-        {theme === 'light' ? (
-          <BigDipperLogoRed />
-        ) : (
-          <BigDipperLogoWhite />
-        )}
+        {/* <img src='@assets/paddy.png' alt="" /> */}
       </div>
     </div>
   );

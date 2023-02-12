@@ -1,12 +1,11 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { ChainLogo } from '@components';
-import { PaddyLogo } from '@components';
+import { ChainLogo, PaddyLogo } from '@components';
 import { LinearProgress } from '@material-ui/core';
 import { readTheme } from '@recoil/settings';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { useStyles } from './styles';
-
 
 const InitialLoad = () => {
   const theme = useRecoilValue(readTheme);

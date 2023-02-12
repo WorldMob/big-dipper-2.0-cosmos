@@ -28,7 +28,8 @@ function App(props: AppProps) {
   return (
     <>
       <DefaultSeo
-        titleTemplate={`%s`}
+        // eslint-disable-next-line react/jsx-curly-brace-presence
+        titleTemplate={'%s'}
         title={`${chainConfig.title}`}
         description={t('common:description')}
         openGraph={{

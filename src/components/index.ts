@@ -31,6 +31,7 @@ import TransactionListDetails from './transactions_list_details';
 import AvatarNameListMsg from './avatar_name_list_msg';
 import ChainIcon from './chain_icon';
 import ChainLogo from './chain_logo';
+import PaddyLogo from './paddy_logo';
 
 export {
   Layout,
@@ -66,4 +67,5 @@ export {
   AvatarNameListMsg,
   ChainIcon,
   ChainLogo,
+  PaddyLogo,
 };

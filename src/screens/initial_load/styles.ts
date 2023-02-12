@@ -6,6 +6,7 @@ export const useStyles = () => {
       return ({
         root: {
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           minHeight: '100vh',
@@ -22,7 +23,7 @@ export const useStyles = () => {
         logo: {
           width: '100%',
           [theme.breakpoints.up('sm')]: {
-            width: '300px',
+            width: '150px',
           },
         },
         divider: {

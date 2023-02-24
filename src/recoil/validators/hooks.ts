@@ -44,7 +44,7 @@ export const useValidatorRecoil = () => {
       // Set loading to be false
       // Set profiles and update if needed.
       // Will come back to this in the future
-      await sleep(4000);
+      await sleep(2500);
       setLoading(false);
       formatAndSetValidatorsAddressList(data);
       setProfiles(data);

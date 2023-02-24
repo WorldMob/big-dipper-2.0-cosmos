@@ -28,6 +28,7 @@ export const useStyles = () => {
         },
         divider: {
           margin: theme.spacing(2, 0),
+          width: theme.spacing(30),
         },
       });
     },

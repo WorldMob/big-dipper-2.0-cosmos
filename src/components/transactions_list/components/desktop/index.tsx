@@ -18,6 +18,7 @@ import {
 } from '@components';
 import { useGrid } from '@hooks';
 import { getMiddleEllipsis } from '@utils/get_middle_ellipsis';
+import { getMessageByType } from '@msg';
 import { TransactionsListState } from '../../types';
 import { columns } from './utils';
 import { useStyles } from './styles';
@@ -62,6 +63,11 @@ const Desktop: React.FC<TransactionsListState> = ({
     ),
     time: dayjs.utc(x.timestamp).fromNow(),
     messages: numeral(x.messages.count).format('0,0'),
+
+    type: (
+      getMessageByType(x.messages.items[0], false, t).type
+    ),
+
   }));
   return (
     <div className={classnames(className, classes.root)}>

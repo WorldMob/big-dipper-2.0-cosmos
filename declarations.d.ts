@@ -23,6 +23,7 @@ type Transactions = {
   height: number;
   hash: string;
   success: boolean;
+  type: string;
   timestamp: string;
   messages: {
     count: number;

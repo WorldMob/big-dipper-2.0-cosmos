@@ -1,7 +1,5 @@
 /* eslint-disable indent */
-import React, {
-  useEffect,
-} from 'react';
+import React from 'react';
 import classnames from 'classnames';
 import {
   Drawer,
@@ -9,6 +7,7 @@ import {
   ClickAwayListener,
 } from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
+import PaddyLogo from '@src/components/paddy_logo';
 import { readTheme } from '@recoil/settings/selectors';
 import WMLogotxtWhite from '@assets/WM_Logo_txt_white_v1.svg';
 import WMLogotxtPurple from '@assets/WM_Logo_txt_purple_v1.svg';
@@ -47,12 +46,13 @@ const Desktop: React.FC<{
               open: isMenu,
             })}
           >
-            <div className={classes.item}>
-              <TitleBar title={title} />
+
+            <div>
               <ActionBar
                 toggleNetwork={toggleNetwork}
                 isNetwork={isNetwork}
               />
+              <TitleBar title={title} />
             </div>
           </AppBar>
           <Drawer

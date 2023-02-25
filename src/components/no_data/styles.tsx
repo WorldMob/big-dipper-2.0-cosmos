@@ -9,7 +9,7 @@ export const useStyles = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          minHeight: '400px',
+          minHeight: '50px',
           '& .MuiTypography-body1': {
             marginTop: theme.spacing(2),
             color: theme.palette.custom.fonts.fontFour,

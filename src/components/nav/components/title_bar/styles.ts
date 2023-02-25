@@ -44,7 +44,7 @@ export const useStyles = () => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginTop: 0,
-            width: '70%',
+            width: '100%',
             padding: theme.spacing(1, 3),
             flexWrap: 'nowrap',
           },

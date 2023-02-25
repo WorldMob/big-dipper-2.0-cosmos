@@ -4,7 +4,6 @@ import { useRecoilValue } from 'recoil';
 import { readMarket } from '@recoil/market';
 import useTranslation from 'next-translate/useTranslation';
 import { Typography } from '@material-ui/core';
-import { ChainLogo } from '@components';
 import { useStyles } from './styles';
 import { formatMarket } from './utils';
 
@@ -22,11 +21,6 @@ const TitleBar:React.FC<{
 
   return (
     <div className={classnames(className, classes.root)}>
-      {
-      title
-        ? <Typography variant="h1">{title}</Typography>
-        : <ChainLogo className={classes.logo} alt="logo" />
-      }
       <div className={classes.content}>
         {market.map((x) => (
           <div key={x.key} className={classes.item}>

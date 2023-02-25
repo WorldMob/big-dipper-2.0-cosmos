@@ -5,10 +5,11 @@ import { useScreenSize } from '@hooks';
 
 export const useDesktop = () => {
   const { isDesktop } = useScreenSize();
-  const [isMenu, setMenu] = useState(false);
+  const [isMenu, setMenu] = useState(true);
   const [isNetwork, setNetwork] = useState(false);
 
   useEffect(() => {
+    setMenu(true);
     // if window size shrinks to tablet/mobile we will close any open tabs
     if (!isDesktop) {
       turnOffAll();
@@ -27,8 +28,8 @@ export const useDesktop = () => {
    * Helper that will check and turn off any open tabs
    */
   const turnOffAll = () => {
-    setMenu(false);
-    setNetwork(false);
+    // setMenu(false);
+    // setNetwork(false);
   };
 
   return {

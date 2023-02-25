@@ -13,7 +13,7 @@ export const useStyles = () => {
           padding: theme.spacing(3),
         },
         actions: {
-          width: '70%',
+          width: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-end',

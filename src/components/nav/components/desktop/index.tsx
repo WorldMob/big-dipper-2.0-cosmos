@@ -1,4 +1,7 @@
-import React from 'react';
+/* eslint-disable indent */
+import React, {
+  useEffect,
+} from 'react';
 import classnames from 'classnames';
 import {
   Drawer,
@@ -23,68 +26,72 @@ const Desktop: React.FC<{
 }> = ({
   className, title,
 }) => {
-  const classes = useStyles();
-  const theme = useRecoilValue(readTheme);
-  const {
-    isMenu,
-    toggleMenu,
-    turnOffAll,
-    toggleNetwork,
-    isNetwork,
-  } = useDesktop();
-  return (
-    <ClickAwayListener onClickAway={turnOffAll}>
-      <div
-        className={classnames(className, classes.root)}
-      >
-        <AppBar
-          position="fixed"
-          className={classnames(classes.appBar, {
-            open: isMenu,
-          })}
+    const classes = useStyles();
+    const theme = useRecoilValue(readTheme);
+    const {
+      isMenu,
+      toggleMenu,
+      turnOffAll,
+      toggleNetwork,
+      isNetwork,
+    } = useDesktop();
+
+    return (
+      <ClickAwayListener onClickAway={turnOffAll}>
+        <div
+          className={classnames(className, classes.root)}
         >
-          <ActionBar
-            toggleNetwork={toggleNetwork}
-            isNetwork={isNetwork}
-          />
-          <TitleBar title={title} />
-        </AppBar>
-        <Drawer
-          variant="permanent"
-          className={classnames(classes.drawer, {
-            open: true,
-            closed: false,
-            [classes.drawerOpen]: isMenu,
-            [classes.drawerClose]: !isMenu,
-          })}
-          classes={{
-            paper: classnames({
+          <AppBar
+            position="fixed"
+            className={classnames(classes.appBar, {
+              open: isMenu,
+            })}
+          >
+            <div className={classes.item}>
+              <TitleBar title={title} />
+              <ActionBar
+                toggleNetwork={toggleNetwork}
+                isNetwork={isNetwork}
+              />
+            </div>
+          </AppBar>
+          <Drawer
+            open
+            variant="permanent"
+            className={classnames(classes.drawer, {
               open: true,
               closed: false,
               [classes.drawerOpen]: isMenu,
               [classes.drawerClose]: !isMenu,
-            }),
-          }}
-        >
+            })}
+            classes={{
+              paper: classnames({
+                open: true,
+                closed: false,
+                [classes.drawerOpen]: isMenu,
+                [classes.drawerClose]: !isMenu,
+              }),
+            }}
+          >
 
-          {theme === 'light' ? (
-            <WMLogotxtPurple
-              className={classes.logo}
-              onClick={toggleMenu}
-              role="button"
-            />
-          ) : (
-            <WMLogotxtWhite
-              className={classes.logo}
-              onClick={toggleMenu}
-              role="button"
-            />
-          )}
-          <MenuItems />
-        </Drawer>
-      </div>
-    </ClickAwayListener>
-  );
-};
+            {theme === 'light' ? (
+              <WMLogotxtPurple
+                className={classes.logo}
+                onClick={toggleMenu}
+                role="button"
+              />
+            ) : (
+              <WMLogotxtWhite
+                className={classes.logo}
+                onClick={toggleMenu}
+                role="button"
+              />
+            )}
+            <MenuItems />
+          </Drawer>
+        </div>
+      </ClickAwayListener>
+    );
+  };
 
 export default Desktop;

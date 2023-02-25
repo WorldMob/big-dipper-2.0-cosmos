@@ -4,7 +4,7 @@ export const useStyles = () => {
   const styles = makeStyles(
     (theme) => {
       const OPEN_DRAWER_WIDTH = 230;
-      const CLOSED_DRAWER_WIDTH = 59;
+      const CLOSED_DRAWER_WIDTH = 55;
 
       return ({
         root: {
@@ -22,8 +22,8 @@ export const useStyles = () => {
         appBar: {
           ...theme.mixins.toolbar,
           display: 'flex',
-          alignItems: 'flex-end',
-          justifyContent: 'flex-start',
+          alignItems: 'flex-center',
+          justifyContent: 'flex-center',
           background: theme?.palette?.background?.default,
           color: theme?.palette?.custom?.fonts?.fontTwo ?? 'inherit',
           width: `calc(100% - ${CLOSED_DRAWER_WIDTH}px)`,
@@ -65,6 +65,13 @@ export const useStyles = () => {
           }),
           overflowX: 'hidden',
           width: CLOSED_DRAWER_WIDTH,
+        },
+        item: {
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          padding: theme.spacing(1),
+          width: '100%',
         },
       });
     },

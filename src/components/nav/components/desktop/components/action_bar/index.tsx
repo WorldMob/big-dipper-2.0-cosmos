@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import { useGetComponentDimension } from '@hooks';
 import { useStyles } from './styles';
 import {
-  Network,
   NetworkList,
   SettingsList,
 } from './components';
@@ -14,7 +13,6 @@ const ActionBar: React.FC<{
   className?: string;
   toggleNetwork: () => void;
 }> = ({
-  toggleNetwork,
   className,
   isNetwork,
 }) => {

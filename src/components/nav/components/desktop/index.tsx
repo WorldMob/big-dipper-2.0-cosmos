@@ -7,7 +7,6 @@ import {
   ClickAwayListener,
 } from '@material-ui/core';
 import { useRecoilValue } from 'recoil';
-import PaddyLogo from '@src/components/paddy_logo';
 import { readTheme } from '@recoil/settings/selectors';
 import WMLogotxtWhite from '@assets/WM_Logo_txt_white_v1.svg';
 import WMLogotxtPurple from '@assets/WM_Logo_txt_purple_v1.svg';

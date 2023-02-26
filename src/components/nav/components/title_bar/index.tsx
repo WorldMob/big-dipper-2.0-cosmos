@@ -11,7 +11,7 @@ const TitleBar:React.FC<{
   className?: string;
   title: string;
 }> = ({
-  className, title,
+  className,
 }) => {
   const { t } = useTranslation('common');
   const classes = useStyles();

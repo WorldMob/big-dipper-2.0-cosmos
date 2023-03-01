@@ -45,6 +45,12 @@ const getDataByType = (type: string) => {
       tagTheme: 'one',
       tagDisplay: 'txEditValidatorLabel',
     },
+    '/cosmos.staking.v1beta1.MsgCancelUnbondingDelegation': {
+      model: MODELS.MsgCancelUnbonding,
+      content: COMPONENTS.CancelUnbonding,
+      tagTheme: 'one',
+      tagDisplay: 'txCancelUnbondingLabel',
+    },
     // ========================
     // bank
     // ========================

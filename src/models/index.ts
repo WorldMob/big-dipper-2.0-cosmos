@@ -7,6 +7,7 @@ import DistributionParams from './distribution_params';
 // ================================
 // Transaction Message Types
 // ================================
+import MsgCancelUnbonding from './msg/staking/msg_cancel_unbonding';
 import MsgMultiSend from './msg/bank/msg_multi_send';
 import MsgSend from './msg/bank/msg_send';
 import MsgVerifyInvariant from './msg/crisis/msg_verify_invariant';
@@ -80,6 +81,7 @@ export {
 };
 
 export {
+  MsgCancelUnbonding,
   MsgSend,
   MsgMultiSend,
   MsgVerifyInvariant,

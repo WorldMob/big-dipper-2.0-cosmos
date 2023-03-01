@@ -15,6 +15,7 @@ import Unknown from './unknown';
 import Redelegate from './staking/redelegate';
 import Undelegate from './staking/undelegate';
 import CreateValidator from './staking/create_validator';
+import CancelUnbonding from './staking/cancel_unbonding';
 import EditValidator from './staking/edit_validator';
 import Send from './bank/send';
 import Multisend from './bank/multisend';
@@ -81,6 +82,7 @@ export {
   Redelegate,
   Undelegate,
   CreateValidator,
+  CancelUnbonding,
   EditValidator,
   Send,
   Multisend,

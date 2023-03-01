@@ -1,5 +1,6 @@
 {
   "txDelegateLabel": "Delegate",
+  "txCancelUnbondingLabel": "Cancel Unbonding ",
   "txRedelegateLabel": "Redelegate",
   "txUndelegateLabel": "Undelegate",
   "txCreateValidatorLabel": "Create Validator",

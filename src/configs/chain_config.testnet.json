@@ -10,11 +10,11 @@
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "wmt",
+  "primaryTokenUnit": "uswmt",
   "votingPowerTokenUnit": "uswmt",
   "tokenUnits": {
     "uswmt": {
-      "display": "uswmt",
+      "display": "wmt",
       "exponent": 6
     },
     "wmt": {

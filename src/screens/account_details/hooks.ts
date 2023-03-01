@@ -63,6 +63,7 @@ export const useAccountDetails = () => {
   // Desmos Profile
   // ==========================
   const {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     fetchDesmosProfile, formatDesmosProfile,
   } = useDesmosProfile({
     onComplete: (data) => {
@@ -78,7 +79,7 @@ export const useAccountDetails = () => {
         loading: false,
         exists: false,
       });
-    } 
+    }
     // else if (chainConfig.extra.profile) {
     //   fetchDesmosProfile(router.query.address as string);
     // }

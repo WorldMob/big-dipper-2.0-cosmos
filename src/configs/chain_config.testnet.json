@@ -11,8 +11,12 @@
     "height": 1
   },
   "primaryTokenUnit": "wmt",
-  "votingPowerTokenUnit": "wmt",
+  "votingPowerTokenUnit": "uswmt",
   "tokenUnits": {
+    "uswmt": {
+      "display": "uswmt",
+      "exponent": 6
+    },
     "wmt": {
       "display": "wmt",
       "exponent": 6

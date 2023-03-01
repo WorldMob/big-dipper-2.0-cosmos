@@ -48,7 +48,7 @@ const fetchDesmosProfile = async (address: string) => {
 };
 
 const formatDesmosProfile = (data:DesmosProfileQuery) => {
-  if (!data.profile.length) {
+  if (data == null || !data.profile.length) {
     return null;
   }
 

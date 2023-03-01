@@ -67,7 +67,7 @@ export const useDesmosProfile = (options: Options) => {
   };
 
   const fetchDesmosProfile = async (input: string) => {
-    let data:DesmosProfileQuery = {
+    let data: DesmosProfileQuery = {
       profile: [],
     };
 
@@ -93,8 +93,9 @@ export const useDesmosProfile = (options: Options) => {
     }
   };
 
-  const formatDesmosProfile = (data:DesmosProfileQuery): DesmosProfile => {
-    if (!data.profile.length) {
+  const formatDesmosProfile = (data: DesmosProfileQuery): DesmosProfile => {
+
+    if (data == null || !data.profile.length) {
       return null;
     }
 

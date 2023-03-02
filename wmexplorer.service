@@ -1,0 +1,13 @@
+[Unit]
+Description=WmExplorer
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/home/shamrock/big-dipper-2.0-cosmos/startServer.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target

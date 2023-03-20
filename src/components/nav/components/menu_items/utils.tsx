@@ -12,6 +12,7 @@ import {
   PROPOSALS,
   PARAMS,
 } from '@utils/go_to_page';
+import { TwitterIcon } from '@src/components/icons';
 
 export const getMenuItems = () => {
   const iconProps = {
@@ -49,6 +50,11 @@ export const getMenuItems = () => {
       key: 'params',
       url: PARAMS,
       icon: <ParamIcon {...iconProps} />,
+    },
+    {
+      key: 'Follow Us',
+      url: 'https://twitter.com/WorldMExplorer',
+      icon: <TwitterIcon />,
     },
   ];
 };

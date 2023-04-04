@@ -3,6 +3,7 @@ import HomeIcon from '@assets/icon-home.svg';
 import TransactionIcon from '@assets/icon-transaction.svg';
 import ProposalsIcon from '@assets/icon-proposals.svg';
 import UserIcon from '@assets/icon-user.svg';
+import LanguageIcon from '@assets/icon-language.svg';
 import ParamIcon from '@assets/icon-param.svg';
 import {
   HOME,
@@ -51,10 +52,20 @@ export const getMenuItems = () => {
       url: PARAMS,
       icon: <ParamIcon {...iconProps} />,
     },
+    // {
+    //   key: 'Useful Links',
+    //   url: LINKS,
+    //   icon: <WebsiteIcon {...iconProps} />,
+    // },
     {
       key: 'Follow Us',
       url: 'https://twitter.com/WorldMExplorer',
       icon: <TwitterIcon />,
+    },
+    {
+      key: 'Documentation',
+      url: 'https://nodebasewm.github.io/docs/',
+      icon: <LanguageIcon {...iconProps} />,
     },
   ];
 };
